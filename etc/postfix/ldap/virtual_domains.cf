@@ -1,4 +1,4 @@
-erver_host = ldap://ldap.example.com
+server_host = ldap://ldap.example.com
 search_base = ou=Mail,dc=example,dc=com
 version = 3
 start_tls = yes
