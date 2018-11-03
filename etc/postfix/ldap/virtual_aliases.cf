@@ -1,5 +1,5 @@
 server_host = ldap://ldap.example.com
-search_base = ou=Mail,dc=example,dc=com
+search_base = ou=Users,ou=Mail,dc=example,dc=com
 version = 3
 start_tls = yes
 bind = yes
@@ -7,4 +7,3 @@ bind_dn = cn=mail,ou=Services,dc=example,dc=com
 bind_pw = secret
 query_filter = (&(objectClass=mailUser)(mailAlias=%s)(!(mailEnabled=FALSE))) 
 result_attribute = mailDrop
-scope = sub
