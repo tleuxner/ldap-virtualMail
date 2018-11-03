@@ -1,5 +1,5 @@
 server_host = ldap://ldap.example.com
-search_base = ou=Mail,dc=example,dc=com
+search_base = ou=Domains,ou=Mail,dc=example,dc=com
 version = 3
 start_tls = yes
 bind = yes
