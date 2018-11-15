@@ -13,4 +13,4 @@ Add schema to our directory:
     adding new entry "cn=virtualMail,cn=schema,cn=config"
 
 ## Dovecot LDAP scripts
-https://github.com/tleuxner/dovecot
+Some basic LDAP maintenance scripts for [dovecot](https://github.com/tleuxner/dovecot).
