@@ -11,3 +11,6 @@ Add schema to our directory:
     
     ldapadd -ZZ -D cn=admin,cn=config -W -H ldap://ldap.example.com -f virtualMail.ldif
     adding new entry "cn=virtualMail,cn=schema,cn=config"
+
+## Dovecot LDAP scripts
+https://github.com/tleuxner/dovecot
