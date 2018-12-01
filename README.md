@@ -24,5 +24,7 @@ Add schema to our directory:
 | mailGroupACL      |                        | acl_groups |
 | mailExpungeTrash  |                        |            |
 
+Some query examples using the schema for [Postfix and Dovecot](https://github.com/tleuxner/ldap-virtualMail/tree/master/etc).
+
 ## Dovecot LDAP scripts
 Some basic LDAP maintenance scripts for [dovecot](https://github.com/tleuxner/dovecot).
