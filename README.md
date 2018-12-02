@@ -12,17 +12,17 @@ Add schema to our directory:
     ldapadd -ZZ -D cn=admin,cn=config -W -H ldap://ldap.example.com -f virtualMail.ldif
     adding new entry "cn=virtualMail,cn=schema,cn=config"
 
-| Attribute         | Postfix                | Dovecot    |
-|-------------------|------------------------|------------|
-| mailHomeDirectory |                        | home       |
-| mailAlias         | mailacceptinggeneralid |            |
-| mailDrop          | maildrop               | user       |
-| mailUidNumber     |                        | uid        |
-| mailGidNumber     |                        | gid        |
-| mailEnabled       |                        |            |
-| mailQuota         |                        | quota_rule |
-| mailGroupACL      |                        | acl_groups |
-| mailExpungeTrash  |                        |            |
+| Attribute         | Postfix                | Dovecot     |
+|-------------------|------------------------|-------------|
+| mailHomeDirectory |                        | home        |
+| mailAlias         | mailacceptinggeneralid |             |
+| mailDrop          | maildrop               | user        |
+| mailUidNumber     |                        | uid         |
+| mailGidNumber     |                        | gid         |
+| mailEnabled       |                        |             |
+| mailQuota         |                        | quota_rule  |
+| mailGroupACL      |                        | acl_groups  |
+| mailExpungeTrash  |                        | autoexpunge |
 
 Some query examples using the schema for [Postfix and Dovecot](https://github.com/tleuxner/ldap-virtualMail/tree/master/etc).
 
