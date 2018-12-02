@@ -16,7 +16,7 @@ Add schema to our directory:
 |-------------------|------------------------|------------|
 | mailHomeDirectory |                        | home       |
 | mailAlias         | mailacceptinggeneralid |            |
-| mailDrop          |                        | user       |
+| mailDrop          | maildrop               | user       |
 | mailUidNumber     |                        | uid        |
 | mailGidNumber     |                        | gid        |
 | mailEnabled       |                        |            |
