@@ -1,9 +1,3 @@
-server_host = ldap://ldap.example.com
-search_base = ou=Users,ou=Mail,dc=example,dc=com
-version = 3
-start_tls = yes
-bind = yes
-bind_dn = cn=mail,ou=Services,dc=example,dc=com
-bind_pw = secret
-query_filter = (|(mailAlias=%s)(mailDrop=%s))
-result_attribute = mailDrop
+To ensure each mail account can only use his own aliases, we will be using our alias definition to control logins:
+
+smtpd_sender_login_maps = ldap:/etc/postfix/ldap/virtual_aliases.cf
