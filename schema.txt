@@ -62,7 +62,15 @@ attributetype (
   DESC 'Time to automatically expunge Trash mailbox'
   EQUALITY caseExactIA5Match
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
-
+  
+attributetype (
+  1.3.6.1.4.1.4203.666.1.209
+  NAME 'mailForward'
+  DESC 'Mailbox hosted externally'
+  EQUALITY caseIgnoreIA5Match
+  SUBSTR caseIgnoreIA5SubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
+  
 objectclass (
   1.3.6.1.4.1.4203.666.1.100
   NAME 'mailUser'
@@ -72,4 +80,4 @@ objectclass (
   MAY  (
         mailHomeDirectory $ mailAlias $ mailDrop
         $ mailUidNumber $ mailGidNumber $ mailEnabled
-        $ mailQuota $ mailGroupACL $ mailExpungeTrash ) )
+        $ mailQuota $ mailGroupACL $ mailExpungeTrash $ mailForward ) )
