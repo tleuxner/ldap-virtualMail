@@ -23,6 +23,7 @@ Add schema to our directory:
 | mailQuota         |                        | quota_rule  |
 | mailGroupACL      |                        | acl_groups  |
 | mailExpungeTrash  |                        | autoexpunge |
+| mailForward       |                        |             |
 
 Some query examples using the schema for [Postfix and Dovecot](https://github.com/tleuxner/ldap-virtualMail/tree/master/etc).
 
