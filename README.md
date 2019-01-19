@@ -30,7 +30,7 @@ Some query examples using the schema for [Postfix and Dovecot](https://github.co
 ## Dovecot LDAP scripts
 Some basic LDAP maintenance scripts for [dovecot](https://github.com/tleuxner/dovecot).
 
-## Real Live ACL example
+## Real life ACL example
 Restricted accounts will be able to modify user attributes or the user password only.
 
 ```
