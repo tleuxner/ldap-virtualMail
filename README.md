@@ -29,3 +29,18 @@ Some query examples using the schema for [Postfix and Dovecot](https://github.co
 
 ## Dovecot LDAP scripts
 Some basic LDAP maintenance scripts for [dovecot](https://github.com/tleuxner/dovecot).
+
+## Real life ACL example
+Restricted accounts will be able to modify user attributes or the user password only.
+
+```
+olcAccess: {0}to dn.subtree="ou=Users,ou=Mail,dc=example,dc=com" by dn.exact
+ ="cn=mailAccounts,ou=Admins,ou=Mail,dc=example,dc=com" write by * break
+olcAccess: {1}to dn.subtree="ou=Users,ou=Mail,dc=example,dc=com" attrs=userP
+ assword,shadowLastChange by self write by dn.children="ou=Admins,ou=Mail,dc
+ =example,dc=com" write by anonymous auth by * none
+olcAccess: {2}to attrs=userPassword,shadowLastChange by self write by anonym
+ ous auth by * none
+olcAccess: {3}to dn.base="" by users read
+olcAccess: {4}to * by users read
+```
