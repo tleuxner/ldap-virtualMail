@@ -1,9 +1,11 @@
 # ldap-virtualMail schema
 LDAP schema for use with Postfix and Dovecot - slated for virtual users and domains.
 
-    1.3.6.1.4.1.53373.2             LDAP Branch - Branch Start
-    1.3.6.1.4.1.53373.2.1           LDAP AttributeTypes
-    1.3.6.1.4.1.53373.2.2           LDAP ObjectClasses
+| OID                   | Usage               |
+|-----------------------|---------------------|
+| 1.3.6.1.4.1.53373.**2**   | LDAP Branch Start   |
+| 1.3.6.1.4.1.53373.2.**1** | LDAP AttributeTypes |
+| 1.3.6.1.4.1.53373.2.**2** | LDAP ObjectClasses  |
 
 Test the schema and create a LDIF file from it:
 
