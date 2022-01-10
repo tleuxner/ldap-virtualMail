@@ -28,10 +28,10 @@ olcAttributeTypes: {7}( 1.3.6.1.4.1.53373.2.1.107 NAME 'mailGroupACL' DESC '
 olcAttributeTypes: {8}( 1.3.6.1.4.1.53373.2.1.108 NAME 'mailExpungeTrash' DE
  SC 'Time to automatically expunge Trash mailbox' EQUALITY caseExactIA5Match
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
-olcAttributeTypes: {9}( 1.3.6.1.4.1.53373.2.1.109 NAME 'mailForward' DESC 'M
+olcAttributeTypes: {9}( 1.3.6.1.4.1.53373.2.1.109 NAME 'mailAlternate' DESC 'M
  ailbox hosted externally' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5S
  ubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
 olcObjectClasses: {0}( 1.3.6.1.4.1.53373.2.2.100 NAME 'mailUser' DESC 'Hoste
  d mail user class' SUP top AUXILIARY MAY ( mailHomeDirectory $ mailAlias $ 
  mailDrop $ mailUidNumber $ mailGidNumber $ mailEnabled $ mailQuota $ mailGr
- oupACL $ mailExpungeTrash $ mailForward ) )
+ oupACL $ mailExpungeTrash $ mailAlternate ) )
